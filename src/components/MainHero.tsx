@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import config from "../config/index.json";
-import useResponsiveSize from "../hooks/useResponsiveSize";
+import config from '../config/index.json';
+import useResponsiveSize from '../hooks/useResponsiveSize';
 
 const MainHero = () => {
   const { mainHero } = config;
   const descriptions =
-    typeof mainHero.description === "string"
+    typeof mainHero.description === 'string'
       ? [mainHero.description]
       : mainHero.description;
 
@@ -17,10 +17,10 @@ const MainHero = () => {
     <main className="pt-10 mx-auto max-w-7xl px-4 xs:pt-12 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 lg:px-8 xl:pt-20">
       <div className="text-center lg:text-left">
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 xs:text-4xl sm:text-5xl md:text-6xl main-title">
-          <span className={`${isMobile ? "" : "block"} xl:inline`}>
+          <span className={`${isMobile ? '' : 'block'} xl:inline`}>
             {mainHero.title}
-          </span>{" "}
-          <span className={`${isMobile ? "" : "block"}  text-primary`}>
+          </span>{' '}
+          <span className={`${isMobile ? '' : 'block'}  text-primary`}>
             {mainHero.subtitle}
           </span>
         </h1>
