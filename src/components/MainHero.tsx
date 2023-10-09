@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import config from "../config/index.json";
+import config from '../config/index.json';
 
 const MainHero = () => {
   const { mainHero } = config;
   const descriptions =
-    typeof mainHero.description === "string"
+    typeof mainHero.description === 'string'
       ? [mainHero.description]
       : mainHero.description;
 
